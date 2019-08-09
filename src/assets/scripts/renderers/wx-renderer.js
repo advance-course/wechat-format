@@ -104,13 +104,13 @@ var WxRenderer = function (opts) {
       var numbers = []
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i]
-        codeLines.push('<code><span class="code-snippet_outer">' + (line || '<br>') + '</span></code>')
-        numbers.push('<li></li>')
+        codeLines.push('<code><span class="code-snippet_outer" style="font-size:14px;line-height:22px">' + (line || '<br>') + '</span></code>')
+        numbers.push('<li style="font-size:14px;line-height:24px"></li>')
       }
       var lang = infostring || ''
-      return '<section class="code-snippet__fix code-snippet__js">'
-        + '<ul class="code-snippet__line-index code-snippet__js">' + numbers.join('')+'</ul>'
-        + '<pre class="code-snippet__js" data-lang="'+lang+'">' 
+      return '<section class="code-snippet__fix code-snippet__js" style="margin:20px 0px;border:none;border-radius:4px;background-color:rgb(245, 247, 249);">'
+        + '<ul class="code-snippet__line-index code-snippet__js" style="padding:16px 10px 0!important">' + numbers.join('')+'</ul>'
+        + '<pre class="code-snippet__js" data-lang="'+lang+'" style="padding-left:10px">' 
           + codeLines.join('')
         + '</pre></section>'
     }

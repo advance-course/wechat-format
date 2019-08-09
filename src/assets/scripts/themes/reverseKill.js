@@ -1,8 +1,8 @@
-var defaultTheme = {
+var killTheme = {
   BASE: {
     'text-align': 'left',
-    'color': '#3f3f3f',
-    'line-height': '2'
+    'color': '#3F3F3F',
+    'line-height': '1.8'
   },
   BASE_BLOCK: {
     'margin': '20px 10px'
@@ -14,25 +14,22 @@ var defaultTheme = {
       'text-align': 'center',
       'font-weight': 'normal',
       'text-align': 'center',
-      'margin': '80px 0px 40px 0px'
+      'margin': '80px 10px 40px 10px'
     },
     h3: {
       'font-weight': 'bold',
       'font-size': '120%',
-      'margin': '40px 0px 20px 0px'
+      'margin': '40px 10px 20px 10px'
     },
     p: {
-      'margin': '15px 0px',
-      'line-height': '1.8',
-      'color': '#2b3a42'
+      'margin': '10px 10px',
+      'line-height': '1.6'
     },
     blockquote: {
-      'margin': '20px 0',
-      'border-radius': '4px',
-      'fontSize': 14,
-      'padding': '1px 15px',
-      'background': 'rgb(245, 247, 249)',
-      'border-left': '4px solid rgb(56, 132, 255)'
+      'color': 'rgb(91, 91, 91)',
+      'padding': '1px 0 1px 10px',
+      'background': 'rgba(158, 158, 158, 0.1)',
+      'border-left': '3px solid rgb(158,158,158)',
     },
     code: {
       'font-size': '80%',
@@ -61,13 +58,13 @@ var defaultTheme = {
     },
     ul: {
       'margin-left': '0',
-      'padding-left': '20px',
+      'padding-left': '0',
       'list-style': 'circle',
     },
     footnotes: {
       'margin': '10px 10px',
       'font-size': '14px'
-    }  
+    }
   },
   inline: {
     // inline element
@@ -83,7 +80,6 @@ var defaultTheme = {
       'background': '#f8f5ec',
       'padding': '3px 5px',
       'border-radius': '2px',
-      'margin': '0 4px'
     },
     link: {
       'color': '#ff3502'

@@ -14,8 +14,8 @@ var app = new Vue({
       currentEditorTheme: 'base16-light',
       editor: null,
       builtinFonts: [
-        { label: '衬线', value: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"},
-        { label: '无衬线', value: "Roboto, Oxygen, Ubuntu, Cantarell, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif"}
+        { label: '无衬线', value: "Droid Sans, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif" },
+        { label: '衬线', value: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"}
       ],
       currentFont: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
       currentSize: '16px',
@@ -27,11 +27,13 @@ var app = new Vue({
       currentTheme: 'default',
       themeOption: [
         { label: 'default', value: 'default', author: 'Lyric'},
-        { label: 'lupeng', value: 'lupeng', author: '鲁鹏'}
+        { label: 'lupeng', value: 'lupeng', author: '鲁鹏'},
+        { label: 'kill', value: 'kill', author: '这波能反杀'},
       ],
       styleThemes: {
         default: defaultTheme,
-        lupeng: lupengTheme
+        lupeng: lupengTheme,
+        kill: killTheme
       },
       aboutDialogVisible: false
     }

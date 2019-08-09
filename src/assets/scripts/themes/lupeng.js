@@ -2,8 +2,8 @@ var lupengTheme = {
     BASE: {
         'text-align': 'left',
         'color': '#595959',
-        'line-height': '1.55em',
-        'letter-spacing': '0.06em'
+        'line-height': '1.7em',
+        'letter-spacing': '0.08em'
     },
     BASE_BLOCK: defaultTheme.BASE_BLOCK,
     block: {
@@ -21,7 +21,7 @@ var lupengTheme = {
         },
         p: {
             'margin': '10px 10px',
-            'line-height': '1.6'
+            'line-height': '1.8'
         },
         blockquote: {
             'color': '#9a9a9a',
