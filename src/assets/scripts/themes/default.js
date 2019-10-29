@@ -62,8 +62,7 @@ var defaultTheme = {
     },
     ul: {
       "margin-left": "0",
-      "padding-left": "0",
-      "list-style": "circle"
+      "padding-left": "20px"
     },
     footnotes: {
       margin: "10px 10px",
