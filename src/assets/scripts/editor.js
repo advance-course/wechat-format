@@ -2,33 +2,42 @@ var app = new Vue({
   el: '#app',
   data: function () {
     return {
-      title: 'WeChat Format',
-      aboutOutput: '',
-      output: '',
-      source: '',
+      title: "WeChat Format",
+      aboutOutput: "",
+      output: "",
+      source: "",
       editorThemes: [
-        { label: 'base16-light', value: 'base16-light' },
-        { label: 'duotone-light', value: 'duotone-light' },
-        { label: 'monokai', value: 'monokai' }
+        { label: "base16-light", value: "base16-light" },
+        { label: "duotone-light", value: "duotone-light" },
+        { label: "monokai", value: "monokai" }
       ],
-      currentEditorTheme: 'base16-light',
+      currentEditorTheme: "base16-light",
       editor: null,
       builtinFonts: [
-        { label: '无衬线', value: "Droid Sans, PingFangSC-light, PingFangTC-light, 'Open Sans', 'Helvetica Neue', sans-serif" },
-        { label: '衬线', value: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"}
+        {
+          label: "无衬线",
+          value:
+            "-apple-system-font, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', PingFangSC-light, PingFangTC-light, 'Microsoft YaHei UI', 'Microsoft YaHei', Arial, 'Open Sans', sans-serif"
+        },
+        {
+          label: "衬线",
+          value:
+            "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
+        }
       ],
-      currentFont: "Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
-      currentSize: '16px',
+      currentFont:
+        "'Helvetica Neue', Droid Sans, PingFangSC-light, PingFangTC-light, 'Open Sans', sans-serif",
+      currentSize: "15px",
       sizeOption: [
-        { label: '16px', value: '16px', desc: '默认' },
-        { label: '17px', value: '17px', desc: '正常' },
-        { label: '18px', value: '18px', desc: '稍大' }
+        { label: "15px", value: "15px", desc: "默认" },
+        { label: "16px", value: "16px", desc: "正常" },
+        { label: "18px", value: "18px", desc: "稍大" }
       ],
-      currentTheme: 'default',
+      currentTheme: "default",
       themeOption: [
-        { label: 'default', value: 'default', author: 'Lyric'},
-        { label: 'lupeng', value: 'lupeng', author: '鲁鹏'},
-        { label: 'kill', value: 'kill', author: '这波能反杀'},
+        { label: "default", value: "default", author: "Lyric" },
+        { label: "lupeng", value: "lupeng", author: "鲁鹏" },
+        { label: "kill", value: "kill", author: "这波能反杀" }
       ],
       styleThemes: {
         default: defaultTheme,
@@ -36,7 +45,7 @@ var app = new Vue({
         kill: killTheme
       },
       aboutDialogVisible: false
-    }
+    };
   },
   mounted () {
     var self = this
